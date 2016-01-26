@@ -1,0 +1,27 @@
+Closest Numbers
+Sorting is useful as a first step in many different operations. For example, searching for a specific elements is easier on a sorted data structure. But search is not the only task facilitated by an initial sort.
+ 
+Given a list of unsorted numbers A={ a1, a2, a3,.. ,aN}, can you find the pair of numbers that has the smallest absolute difference between its elements? If there are multiple pairs that have the same absolute distance as the minimum, find them all.
+ 
+Constraints
+1 ≤ N ≤ 2x105
+-107 ≤ x ≤ 107, where x ∈ array
+No repetitions: ai≠ aj where 1 ≤ i < j ≤N
+ 
+Input Format
+There will be two lines of input:
+First line contains N,  the size of the list
+Next line contains N space separated Integers a1, a2, a3,.. ,aN representing the elements of the list.
+ 
+Output Format
+Output the pair of numbers with the smallest difference separated by a space. If there are multiple pairs, output all of them in ascending order, all on the same line, with a single space between each pair of numbers. If there is a number that lies in two pairs, print it two times. (See sample case #02 for explanation).
+ 
+Sample Input #00
+10
+-20 -3916237 -357920 -3620601 7374819 -7330761 30 6246457 -6461594 266854 
+ 
+Sample Output #00
+-20 30
+ 
+Explanation #00
+(30) - (-20) = 50, which is the smallest difference.

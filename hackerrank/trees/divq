@@ -1,0 +1,11 @@
+def divideAndConquer(iArray):
+    if left < right:
+        return
+    
+    mid = N/2
+    n = Node(data=iArray[mid])
+    
+    n.left = divideAndConquer(iArray[mid:])
+    n.right = divideAndConquer(iArray[:mid])
+    
+    return n
