@@ -1,0 +1,8 @@
+2D array search
+Find a number in a sorted 2D array.
+ 
+You're given a 2d array (N x M) where all the numbers (integers) in the array are in increasing order from left to right and top to bottom. You're also given a target number, to be searched inside the array. What is the best way to search and determine if a target number is in the array?
+
+Solution: take inspiration from http://www.geeksforgeeks.org/search-in-row-wise-and-column-wise-sorted-matrix/
+
+(Notice that this can be a very deceptive problem in a good way. Solution seems difficult, but it's actually quite simple.)

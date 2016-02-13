@@ -1,0 +1,7 @@
+Find minimum in a rotated, sorted array
+(Relatively easy problem, but still popular)
+ 
+We're given an array with sorted numbers. The array has been rotated an unknown number of times. We need to figure out the minimum number in such an array. What would be a fast method that uses only constant space? 
+ 
+ 
+Solution: http://www.geeksforgeeks.org/find-minimum-element-in-a-sorted-and-rotated-array/

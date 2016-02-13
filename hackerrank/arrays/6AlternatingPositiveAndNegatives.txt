@@ -1,0 +1,22 @@
+Alternating positive and negative
+Given an array containing both +ve and -ve integers, return an array of alternating positive integers and negative integers such that each set of integers are in the same order as in the input array (stable). 
+e.g. 
+input {2, 3, -4, -9, -1, -7, 1, -5, -6} 
+output {2, -4, 3, -9, 1, -1, -7, -5, -6}. 
+
+Can you implement it without using any additional space?
+ 
+Solution: With no additional space, you can't do bette than O(N^2):
+ 
+>>> A=[2, 3, -4, -9, -1, -7, 1, -5, -6]
+>>> for i in range(len(A)):
+...     j=0
+...     while j+2 < len(A):
+...             S=[A[j], A[j+1], A[j+2]]
+...             S=[1 if x >=0 else -1 for x in S]
+...             if S[0]==S[1] and S[1]!=S[2]:
+...                     A[j+1],A[j+2]=A[j+2],A[j+1]
+...             j+=1
+... 
+>>> A
+[2, -4, 3, -9, 1, -1, -7, -5, -6]

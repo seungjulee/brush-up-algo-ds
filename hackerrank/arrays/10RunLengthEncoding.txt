@@ -1,0 +1,14 @@
+Run Length Encoding ++
+(Not technically RLE, but very similar in concept. RLE is actually a trivial problem; but this one here is slightly more complicated)
+ 
+L10n (where 10 stands for the number of letters between the first 'L' and the last 'n' in the word “Localization”), is called a Numeronym.
+
+Generate all such possible Numeronyms for any given string (character array). for eg. for "nailed" :
+ 
+"n4d"
+"na3d", "n3ed"
+"n2led", "na2ed", "nai2d"
+ 
+Go until there is a '2' in the permutations. There is no point of going below 2, because that won't compress the string.
+ 
+Solution: Take inspiration from http://www.careercup.com/question?id=5733696185303040
