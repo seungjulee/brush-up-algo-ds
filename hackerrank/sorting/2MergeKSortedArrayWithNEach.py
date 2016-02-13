@@ -13,7 +13,7 @@ class MinHeap(object):
         self.percUp(self.heapSize)
 
     def percUp(self, i):
-        while i // 2 > 0:
+        while i // 2 > 0: # parent
             if self.heapList[i] < self.heapList[i//2]:
                 tmp = self.heapList[i]
                 self.heapList[i] = self.heapList[i//2]
